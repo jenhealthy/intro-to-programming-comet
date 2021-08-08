@@ -6,46 +6,66 @@
     <meta name = "keywords" content = "HTML, CSS, JavaScript">
     <meta name = "description" content="Portfolio page of Jen Huynh">
     <meta name = "author" content = "Jen Huynh">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Jen H Portfolio</h1>
-<h2>About</h2>
+<nav>
+    <li><a href="#getMessage">Message</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skillsList">Skills</a></li>
+    <li><a href="#about">About</a></li>
+</nav>
+<section>
+    <h1 id="header">Jen Huynh</h1>
+</section>
+<section>
+    <h2 id="about">About</h2>
     <p>Jen is a software engineer that is located in the Bay Area. In her free time, she enjoys going on walks, making trinkets with clay, and designing.</p>
 </section>
 <section>
-<h2>Experience</h2>
-    <p>Jen has experience in working with HTML, CSS, and JavaScript. She enjoys building websites and problem solving.</p>
-    <h3>Projects by Jen</h3>
-<ul>
-    <li>Website Theme</li>
-    <li>Yelp Survey Form</li>
-</ul>
+    <h2 id="experience">Experience</h2>
+    <ul class="experience">
+        <li class="tag">HTML</li>
+        <li class="tag">CSS</li>
+        <li class="tag">JavaScript</li>
+    </ul>
+        <p>Jen has experience in working with HTML, CSS, and JavaScript. She enjoys building websites and problem solving.</p>
+    <h3 id="projects">Projects by Jen</h3>
+    <ul>
+        <li>Website Theme</li>
+        <li>Yelp Survey Form</li>
+    </ul>
 </section>
 <section id="skills">
-    <h2>Skills</h2>
+    <h2 id="skillsList">Skills</h2>
     <ul>
         
     </ul>
 </section>
 <section>
-<h2>Connect</h2>
+<h2 id="contact">Contact</h2>
     <a href="mailto:jenhealthyh@gmail.com">Email Jen</a> <br>
     <a href="https://github.com/jenhealthy">Github: @jenhealthy</a>
 </section>
 <section>
     <h2>Leave a Message</h2>
-    <form name="leave_message">
-        <label for="name">Name</label><br>
-        <input type="text" name="name" required><br>
+    <form id="getMessage" name="leave_message">
+        <label class="formLabel" for="name">Name</label><br>
+        <input class="formLabel" type="text" name="name" required><br>
 
-        <label for="email">Email</label><br>
-        <input type="email" name="email" required><br>
+        <label class="formLabel" for="email">Email</label><br>
+        <input class="formLabel" type="email" name="email" required><br>
 
-        <label for="submit">Submit</label><br>
-        <textarea name="message" required>
+        <label class="formLabel" for="submit">Submit</label><br>
+        <textarea class="formLabel" name="message" required>
         </textarea>
         <br>
-        <button type="submit" value="Submit">
+        <button class="submitButton" type="submit" value="Submit">
             Submit
         </button>
     </form>
@@ -56,9 +76,9 @@
         
     </ul>
 </section>
-<footer> 
+    <footer> 
 
-</footer>
-<script src="js/index.js"></script>
+    </footer>
+<script src="index.js"></script>
 </body>
 </html>
