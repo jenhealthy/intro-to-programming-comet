@@ -7,6 +7,13 @@ body {
 section{
     padding: 20px 45px;
 }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 300px;
+    margin: 10px;
+}
 nav li{
     float: right;
     list-style: none; 
@@ -29,27 +36,28 @@ p, a, li {
     font-weight: 400;
     color: black;
 }
-.experience, .skills {
+.experience {
     padding: 0px;
 }
-.tag, li {
+
+nav a {
+    text-decoration: none;
+}
+.tag, .experience li, .skills li {
     border: 2px solid green;
     display: inline-block;
     padding: 0.25rem 0.75rem;
     margin-bottom: 0.5rem;;
 }
-ul {
-    padding: 0px;
-    
-}
+ 
 .formLabel {
-    font-size: 1.2em;
+    font-size: 1em;
     color: green;
 }
 form input, textarea  {
-    font-size: 0.5em;
+    font-size: 0.25em;
     border-color: lightseagreen;
-    padding: 10px;
+    padding: 5px;
 }
 .submitButton {
     border-style: 2px solid seagreen;
@@ -61,9 +69,10 @@ footer{
     text-align: center;
     color: white;
     background-color:  seagreen;
-    height: 100%;
-    padding: 20px;
-    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.7em;
+    height: 1.5rem; 
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

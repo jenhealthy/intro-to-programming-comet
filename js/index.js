@@ -4,19 +4,19 @@ let thisYear = today.getFullYear();
 let footer = document.querySelector('footer');
 let copyright = document.createElement('p');
 //inserting copyright text in footer
-footer.innerHTML = 'Jen ' + thisYear;
+footer.innerHTML = 'Created by Jen Huynh ' + thisYear;
 document.body.appendChild(copyright);
 
 //add skills section
 let skills = ['HTML', 'CSS', 'JavaScript'];
-let skillsSection = document.querySelector('#skills');
-let skillsList = document.querySelector('#skills ul');
+let skillsList = document.getElementsByClassName('skills');
+console.log("mySkillsListis", skillsList);
 
 //create list of skills
     for(let i = 0; i < skills.length; i++) {
         let skill = document.createElement('li');
           skill.innerHTML = skills[i];
-          skillsList.appendChild(skill);
+          skillsList[0].appendChild(skill);
     } 
 
 //display messages in list
