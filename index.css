@@ -5,7 +5,7 @@ body {
     margin: 25px;
 }
 section{
-    padding: 20px 40px;
+    padding: 20px;
 }
 .container {
     display: flex;
@@ -22,6 +22,9 @@ nav li{
     margin: 0px;
     margin-bottom: 0.5rem;
 }
+ul .skills{
+    padding: 0px;
+}
 h1 {
     font-weight: 700;
     font-size: 3em; 
@@ -32,24 +35,21 @@ h2, h3 {
     font-weight: 700;
 }
 p, a, li {
-    font-size: 1em; 
-    font-weight: 400;
-    color: black;
-}
+        font-weight: 400;
+        color: black;
+    }
 .experience {
-    padding: 0px;
+        padding: 0px;
 }
-
 nav a {
     text-decoration: none;
 }
 .tag, .experience li, .skills li {
     border: 2px solid green;
     display: inline-block;
-    padding: 0.25rem 0.75rem;
-    margin-bottom: 0.5rem;;
+    padding: 0.75rem;
+    margin-bottom: 1rem;;
 }
- 
 .formLabel {
     font-size: 1em;
     color: green;
@@ -76,23 +76,19 @@ footer{
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    body {font-size: 1em;}
+     body {font-size: 1em;}
 }
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     body {font-size: 1.3em;}
 }
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     body {font-size: 1.4em;}
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     body {font-size: 1.3em;}
 }
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     body {font-size: 1.25em;}
